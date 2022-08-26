@@ -4,9 +4,14 @@ function calcular(){
     var tabua = Number(conta.value)
     var c = 1
     res.innerHTML = ''
-    while(c <= 10){
-        var total =+ (tabua * c)
-        res.innerHTML += (`${tabua} x ${c} = ${total} <br>`)
-        c++      
-    }
+    if(tabua == ''){
+        window.alert('Erro, preencha com um número')
+    } else{
+        while(c <= 10){
+            var total =+ (tabua * c)
+            res.innerHTML += (`${tabua} x ${c} = ${total} <br>`)
+            c++      
+        }
+    }  
 }
+
