@@ -5,7 +5,7 @@ function calcular(){
     var c = 1
     res.innerHTML = ''
     if(tabua == ''){
-        window.alert('Erro, preencha com um número')
+        window.alert('Erro, preencha com um número.')
     } else{
         while(c <= 10){
             var total =+ (tabua * c)
